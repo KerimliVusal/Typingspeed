@@ -187,6 +187,9 @@ animation-direction: alternate;
 text-shadow: 0 0 1px white;
 color: #fff;
 }
+.audo{
+  display:none;
+}
 
 .lds-ripple {
   display: inline-block;

@@ -9,10 +9,12 @@ import Navba from './navbar';
 import Swal from 'sweetalert2'
 import log1 from './speedtype.png'
 import Loa from './Loa';
+const sound=require("./sound/sound_beep.wav")
 function App() {
   const intervalID=useRef<any>();
   const inpta=useRef<any>();
   const refbtn=useRef<any>();
+  const audRef = useRef(null);
   const[count,setCount]=useState<number>(0)
   const[period,setPeriod]=useState<number>()
   const[light,setLight]=useState<any>()
@@ -182,6 +184,7 @@ else if(i===wpk&&!words[i].toString().includes(enteredword)) {
     // let a=i;
      let spt=document.querySelector<HTMLElement>(`#id${i}`)!;
      spt.style.color='red'
+     Playaudio();
 
 }  
 else if(i===wpk&&words[i].toString().includes(enteredword)) {
@@ -195,7 +198,9 @@ else if(i===wpk&&words[i].toString().includes(enteredword)) {
 
 }
 }
-
+const Playaudio = () => {
+  (audRef.current as any).play();
+}
 
 useEffect(()=>{
   RandomWords();
@@ -207,6 +212,7 @@ useEffect(()=>{
       {loa==true?<Loa/>:<div> 
       <Navba setLight={setLight}/>
      <h2 className='typeh2'>Typing Test</h2>
+     <span className='audo'><audio controls src={sound} ref={audRef}  /></span>
      <div className='selecttime'><div className='timebuton'><button onClick={()=>{setPeriod(30);setCount(30);}}>30s</button><button onClick={()=>{setPeriod(60);setCount(60);}}>60s</button></div>
      <div className='selectdifficulty'><button onClick={()=>{easy();}}>Easy</button><button onClick={()=>{hard();}}>Hard</button></div>
      </div>
