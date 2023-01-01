@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Typingspeed/static/css/main.b1316a44.css",
+    "main.css": "/Typingspeed/static/css/main.e07a9cfb.css",
     "main.js": "/Typingspeed/static/js/main.0fd9b6af.js",
     "static/js/787.48450391.chunk.js": "/Typingspeed/static/js/787.48450391.chunk.js",
     "static/media/machiko-sun.gif": "/Typingspeed/static/media/machiko-sun.3d7c75bcdaf14c8b2020.gif",
     "static/media/speedtype.png": "/Typingspeed/static/media/speedtype.e73d958619d8ad3cb3e5.png",
     "static/media/sound_beep.wav": "/Typingspeed/static/media/sound_beep.c4d01accd6dec0cffd52.wav",
     "index.html": "/Typingspeed/index.html",
-    "main.b1316a44.css.map": "/Typingspeed/static/css/main.b1316a44.css.map",
+    "main.e07a9cfb.css.map": "/Typingspeed/static/css/main.e07a9cfb.css.map",
     "main.0fd9b6af.js.map": "/Typingspeed/static/js/main.0fd9b6af.js.map",
     "787.48450391.chunk.js.map": "/Typingspeed/static/js/787.48450391.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1316a44.css",
+    "static/css/main.e07a9cfb.css",
     "static/js/main.0fd9b6af.js"
   ]
 }
