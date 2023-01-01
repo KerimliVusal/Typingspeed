@@ -1,38 +1,251 @@
-.App {
+
+
+body {
   text-align: center;
+ 
 }
+.App{
+  background-color: rgb(51, 51, 51);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.typeh2{
+  color:rgb(224, 146, 2);
+  font-size: 40px;
+  font-style: oblique;
+  font-weight: 200;
+  text-align:center;
 }
+.selecttime{
+  text-align: right;
+  margin: 50px 100px;
+}
+.timebuton button{
+  border: none;
+  background: none;
+  color:rgb(224, 146, 2);
+  margin: 5px;
+  font-size: 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.selectdifficulty button{
+  border: none;
+  background: none;
+  color:rgb(224, 146, 2);
+  margin: 5px;
+  font-size: 18px;
+
+}
+.timespan2{
+  font-size: 55px;
+  color: rgb(129, 129, 129);
+  position: relative;
+  padding-left: 50px;
+}
+.timespan{
+  font-size: 20px;
+  color:rgb(224, 146, 2)!important;
+position: absolute;
+left: 0;
+top: 20%;
+}
+.timearea{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.speedspan1{
+  position: relative;
+  color: rgb(133, 132, 132);
+  font-size: 55px;
+  margin-left: 30px;
+  padding-left: 50px;
+}
+.speedspan2{
+position: absolute;
+left: 0;
+top:20%;
+color: rgb(224, 146, 2);
+font-size: 20px;
+}
+.randomtext{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 24px;
+  color:rgb(170, 170, 170)
+  
+}
+.randomtext p{
+  width: 70%;
+  border: 2px solid rgb(231, 175, 21);
+  padding: 30px;
+  border-radius: 10px;
+
+}
+.inputfield{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.inputfield input{
+  padding: 15px 10px 15px 25px;
+  outline: none;
+  color: rgb(240, 240, 240);
+  border: 2px solid rgb(211, 211, 211);
+  font-size: 17px;
+  border-radius: 10px;
+  background: none;
+}
+.btn1{
+  color:rgb(75, 75, 75);
+}
+.btn2{
+ color: rgb(240, 240, 240);
+}
+.startbutton{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.startbutton button{
+  padding: 10px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  font-size: 25px;
+
+}
+.footer{
+  text-align: center;
+  color: #fff;
+  background-color: rgb(61, 61, 61);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 50px;
+  
+}
+.footer p{
+  font-family: cursive;
+  padding-top: 10px;
+}
+button{
+  cursor: pointer;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 102, 0);
+}
+.logo{
+  margin: 20px;
+}
+.tema{
+  margin: 20px;
+}
+.tema button{
+  border:none;
+  background: none;
+  font-size: 25px;
+  color:rgb(224, 146, 2);
+}
+.correctword{
+  color:green;
+}
+.falseword{
+  color:red;
+}
+.currentword{
+  color:#fff;
+}
+/* ///////loading */
+@keyframes load {
+  0%{
+      opacity: 0.08;
+/*         font-size: 10px; */
+/* 				font-weight: 400; */
+      filter: blur(5px);
+      letter-spacing: 3px;
+      }
+  100%{
+/*         opacity: 1; */
+/*         font-size: 12px; */
+/* 				font-weight:600; */
+/* 				filter: blur(0); */
+      }
 }
 
-.App-link {
-  color: #61dafb;
+.animate {
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin: auto;
+/* 	width: 350px; */
+/* 	font-size:26px; */
+font-family: Helvetica, sans-serif, Arial;
+animation: load 3.2s infinite 0s ease-in-out;
+animation-direction: alternate;
+text-shadow: 0 0 1px white;
+color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color:black;
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid rgb(61, 61, 61);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.loa{
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  background:linear-gradient(rgb(225, 225, 247),rgb(166, 166, 253));
+  
 }
