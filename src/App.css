@@ -14,10 +14,11 @@ body {
   font-style: oblique;
   font-weight: 200;
   text-align:center;
+  margin: 30px;
 }
 .selecttime{
   text-align: right;
-  margin: 50px 100px;
+  margin: 80px 100px;
 }
 .timebuton button{
   border: none;
@@ -69,7 +70,7 @@ font-size: 20px;
 .randomtext{
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 60px 20px;
   font-size: 24px;
   color:rgb(170, 170, 170)
   
@@ -84,7 +85,7 @@ font-size: 20px;
 .inputfield{
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 60px 20px;
 }
 .inputfield input{
   padding: 15px 10px 15px 25px;
@@ -121,6 +122,8 @@ font-size: 20px;
   margin-bottom: 0;
   padding-bottom: 0;
   height: 50px;
+  margin-top: 150px;
+  
   
 }
 .footer p{
